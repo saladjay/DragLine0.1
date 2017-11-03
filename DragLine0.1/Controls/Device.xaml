@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="DragLine0._1.Controls.Device"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DragLine0._1.Controls"
+             mc:Ignorable="d" 
+             Height="100" Width="100" Background="Blue">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <local:ComPort Background="Black" Grid.Row="1" Grid.Column="0" Width="30" Height="30" HorizontalAlignment="Left" comType="Left"></local:ComPort>
+        <local:ComPort Background="Black" Grid.Row="1" Grid.Column="2" Width="30" Height="30" HorizontalAlignment="Right" comType="Right"></local:ComPort>
+        <local:ComPort Background="Black" Grid.Row="2" Grid.Column="1" Width="30" Height="30" VerticalAlignment="Bottom" comType="Buttom"></local:ComPort>
+        <local:ComPort Background="Black" Grid.Row="0" Grid.Column="1" Width="30" Height="30" VerticalAlignment="Top" comType="Top"></local:ComPort>
+    </Grid>
+</UserControl>
